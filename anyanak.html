@@ -1,0 +1,448 @@
+<html><head>
+  <title>Optimalizálási Modellek</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" async="" src="index_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-20020936-1']);
+      _gaq.push(['_trackPageview']);
+      
+        (function() {
+            var ga = document.createElement('script'); ga.type =
+        'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+        : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+          })();
+          
+          </script>
+
+<style>
+.column {
+
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.column2 {
+box-shadow: 10px 10px;
+  border-radius: 25px;
+  background-color: #aaee23;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.column3 {
+
+  border-radius: 25px;
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+.column4 {
+  border-radius: 25px;
+box-shadow: 10px 10px;
+  background-color: #aaee23;
+  float: left;
+  width: 60%;
+  padding: 15px;
+
+
+}
+.column4:hover
+{
+   transform: translate(0px, 100px);
+   width: 300;
+height: 300;
+border-radius: 25px;}
+    
+ 
+.column5 {
+  border-radius: 25px;
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+</style>
+
+</head>
+  <body vlink="#f1c40f" text="#000000" link="#FFFE83" bgcolor="#16a085" alink="#ff0000">
+<h1>Optimalizálási Modellek 2023 ősz</h1>
+<h3>Laborgyakorlat</h3>   
+
+<h2><a href="https://docs.google.com/document/d/e/2PACX-1vSQ_ZfzPxibC3-JfZK0SPIhCy6kF92cnOQMAvTHW1IMdLX26GnjKnB0dcfpwYFx8Jb9a1dg4O3uuvkh/pub">Tárgyleírás</a></h2>
+
+<h2><a href="https://moodle2.inf.u-szeged.hu/moodle38/course/view.php?id=17">Moodle oldal</a></h2>
+
+<div class="row">
+  <div class="column" style="width:20%">
+    <h2>Column</h2>
+    <p>1. óra: <a href="1.html">Bevezető feladat</a>, <a href="1b.html">2. Feladat</a>,</p>
+  </div>
+  
+  <div class="column2" style="width:40%">
+    <h2>Column</h2>
+    <p>2. óra: <a href="2.html">Feladat</a>, <a href="szall.html">Beadandó feladat</a>,</p>
+  </div>
+  
+  <div class="column3" style="width:40%">
+    <h2>Column</h2>
+    <p>3. óra: Oldjuk meg a <a href="2B.html">gépes feladatot! </a> Ezt pedig egyénileg: <a href="munka.html">munkák</a>,</p>
+  </div>
+  
+  <div class="column4" style="width:40%">
+    <h2>Column</h2>
+    <p>4. óra: Nézzük meg a következő
+<a href="ProblemBM.html">feladatot</a>, majd <a href="Nemlin.html">hasonló
+feladatokat</a>. Szorgalmi:
+<a href="repteres.html">Repteres nemlineáris feladat</a>,</p>
+  </div>
+  
+  <div class="column5" style="width:40%">
+    <h2>Column</h2>
+    <p>5. óra: Az AMPL leíró nyelv tárgyalásának megkezdése, egy kis <a
+href="Pelda4.html">feladat</a> segítségével. 
+Gyakorlásképpen oldjatok meg egy <a href="prod_egy.html">összetett gyártási feladatot</a> is!
+,</p>
+  </div>
+  
+  <div class="column" style="width:20%">
+    <h2>Column</h2>
+    <p>6. óra: Kezdjük egy <a href="A.html">trükkös feladattal</a>, <a href="A.mod">A.mod</a>, <a href="A.dat">A.dat</a>, <a href="A.run">A.run</a>
+Beküldendő feladat a moodle-on! <a href="2S.run">run file érzékenységvizsgálathoz</a>,</p>
+  </div>
+  
+  <div class="column" style="width:80%">
+    <h2>Column</h2>
+    <p>7. óra: Oldjuk meg a <a href="prod.html">többperiódusos összetett feladat</a>ot!,</p>
+  </div>
+
+</div>
+
+<br>8. óra: Nézzünk meg pár <a href="location.html">vállalatelhelyezési feladatot folytonos esetben</a>! Kezdjük az 1-es norma center feladattal!
+
+<br>9. óra: Oldjunk meg egy <a href="szorg2.html">projekt tervezési feladat</a>ot! Utána gondolkodjunk el rajta, hogy ha legrövebb utat keresnénk A és C vége között, milyen modellt használnánk? És az A-C maximális folyam problémát hogy oldanád meg, ha a hosszak itt kapacitásokat jelentenének?
+
+<br>10. óra: Elsőként oldjuk meg a <a href="bulemia.html">feladat</a>ot!  
+
+<br>11. óra: Nézzük meg a <a href="location.html">vállalatelhelyezési feladatokat diszkrét esetben</a>!
+
+<!--
+<br>12. óra: Oldjunk meg <a href="orokles.html">öröklési feladatot</a>ot! Beküldendő feladat a moodle-on!
+-->
+
+
+
+<h4>Beadandó feladat:</h4>
+
+<p>Mindenki jelentkeznie kell egy feladatra, ahol megadja, hogy angol
+vagy magyar, könnyű, közepes, vagy nehéz feladatot kér.
+A közepes magyar feladatra max 33 pontot lehet kapni, a könnyített feladat ebből -5 pont, a nehéz
+feladat +5 vagy akár több pontot is érhet, ha sikerül megoldani. 
+<strong>Arról amit be kell küldeni <a href="Beadando.html">itt</a>
+írok bővebben.</strong> Érzékenységvizsgálathoz használható futtatófájl, benne
+magyarázattal: <a href="SensAnal.run">SensAnal.run</a>. <strong>Határidő: 13. óra</strong>
+
+
+
+<h4>Szorgalmi feladatok</h4>
+<a href="muzeum.png">Múzeum</a> 
+<br><a href="szorg3.html">Konténer</a> 
+<li><a href="orokles.html">Öröklés</a> (3 gyerek esetén?)
+<!--br><a href="location.html">Vállalatelhelyezés</a-->
+<br><a href="szorg.html">Bitsorozatok helytakarékos tárolása</a> Plusz segítség, hogy egy
+halmaz hatványhalmaza megadható AMPL-ben <a href="powerset.mod">így</a>. Aztán hogy ez mire jó azt nektek kell kitalálni...
+<br> <a href="repteres.html">Repteres nemlineáris feladat</a>
+
+<h4><a href="https://www.inf.u-szeged.hu/~boglarka/AMPL/">AMPL letöltés</a>
+
+<h4>Hasznos linkek, irodalom:</h4>
+<ul>
+<li>G.-Tóth Boglárka: <a href="http://tankonyvtar.ttk.bme.hu/pdf/123.pdf">Optimalizálási Rendszerek
+és Matematikai Modellezés példákon keresztül</a> vagy <a href="http://www.inf.u-szeged.hu/~boglarka/OptProgRszV4b.pdf">innen</a></li>
+<li>Az Excelt a Neptun-on keresztül tudja bármely hallgató beszerezni, vagy mindjárt a <a href="https://o365.eduid.hu/">https://o365.eduid.hu/</a> címen keresztül
+</li>
+<!--<li>Mádi-Nagy Gergelytől egy
+<a href="http://www.cs.elte.hu/~gergely/Excel/LPSolver.htm">bevezető példa</a>
+részletes tárgyalása és egy
+<a href="http://www.cs.elte.hu/~gergely/Excel/Pelda1.htm">szöveges feladat</a>
+megoldása az eredmény értelmezésével.
+</li>-->
+
+<li>Az AMPL-hez egy <a href="ampldoc.pdf">angol bevezető</a> és egy 
+<a href="ampl3.pdf">hosszabb leírás</a> sok példával a végén szintén angolul.
+</li>
+<li>Az AMPL könyv elérhető <a href="https://ampl.com/learn/ampl-book/">itt</a>. 
+</li>
+<li>Használjunk AMPL-t colab-on keresztül. <a href="https://colab.ampl.com/"> https://colab.ampl.com/</a>
+</li>
+<li> Érzékenységvizsgálat AMPL-ben kidolgozott példával: 
+<a href="http://www.cs.elte.hu/~csisza/files/alkmat/cplex/feladat3.htm">feladat</a>, <a href="2.mod">mod</a>, 
+<a href="2.dat">dat</a>, <a href="2S.run">run</a>, <a href="2.out">érzékenységvizsgálat eredménye</a>
+</li>
+</ul>
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<br>4. óra: Nézzük meg a következő
+<a href="ProblemBM.html">feladatot</a>, majd <a href="Nemlin.html">hasonló
+feladatokat</a>. <a href="Pelda3_2020.xlsx">megoldások (xlsx)</a>
+<!--a href="Airplane.html">Repteres nemlineáris feladat</a-->
+
+<!--br>5. óra: 1.ZH
+
+<br>6. óra: Az AMPL leíró nyelv tárgyalásának megkezdése, egy kis <a
+href="Pelda4.html">feladat</a> segítségével.  <a href="Pelda4.mod">a matematikai
+modell AMPL-ben</a>, <a href="Pelda4.dat">adatok AMPL-ben</a>, <a href="ruhagyar.html">ruhagyar</a>. <a href="c.dat">Táblázat szebben</a>. <Megoldás angolul: <a href="cloth.mod">modell AMPL-ben</a>, <a href="cloth.dat">adatok</a>, <a
+href="cloth.run">futtató fájl</a>.
+<a href="hati1.html">Hátizsákos feladat</a>
+
+
+<br>7. óra: <a href="hati1.html">Hátizsákos feladat</a>, <a href="hati.mod">modell</a>, <a
+href="hati.dat">adatok</a>, <a href="hati.run">run file</a> Ha az kész, ezt oldjátok meg: <a href="hati.html">nagy hátizsákos feladat</a>
+<a href="hatizsak.mod">modell</a>, <a
+href="hatizsak.dat">adatok</a>, <a href="hatizsak.run">run file</a>
+
+
+<br>8. óra:
+Oldjunk meg egy <a href="prod1.html">összetett gyártási feladatot</a> is!  <a
+href="prod1.mod">modell</a>, <a href="prod1.dat">adatok</a>, <a
+href="prod1.run">run file</a>. 
+Ha kész, oldjuk meg ezt több periódus esetén: <a href="prod.html">többperiódusos összetett feladat</a>
+
+<br>9. óra:
+ Fejezzük be a <a href="prod.html">többperiódusos összetett feladatot</a> <a
+href="model.png">Matematikai modell</a>, <a
+href="prod.mod">AMPL modell</a>, <a href="prod.dat">adatok</a>, <a href="prod.run">run file</a>
+Aki kész, nézzen meg egy <a href="A.html">trükkös</a> feladatot. 
+<a href="A.mod">A.mod</a>, <a href="A.dat">A.dat</a>, <a href="A.run">A.run</a>.
+ Ha kész, futtassuk újra ezzel:
+<a href="2S.run">run file érzékenységvizsgálathoz</a>
+
+<!--br>10. óra: Érzékenységvizsgálat a múlt órai feladatra: <a href="A.html">trükkös</a> feladatot. 
+<a href="A.mod">A.mod</a>, <a href="A.dat">A.dat</a>, <a href="2S.run">run file érzékenységvizsgálathoz</a>.
+Próbáljuk megoldani az <a href="orokles.html">örökléses feladatot</a>, 
+<!--a href="orokles.mod">mod</a>, <a href="orokles.dat">dat</a>, <a href="orokles.run">run</a>.
+ majd gondolkodjunk a <a href="posta.html">postai feladaton</a>! 
+
+<!--br>11. óra: <!--Oldjuk meg a <a href="szorg2.html">projekttervezési feladatot</a>! <a href="elek_hasznalatahoz.txt">élek AMPL-ben</a>
+<élekkel felírva <a href="project.mod">modell</a>, <a
+href="project.dat">adatok</a>, <a href="project.run">run file</a>.
+
+ <a href="CurveFit.png">görbeillesztési feladat</a> megoldásán, 
+<a href="text.html">adatok szebben</a>. <a href="curvefit1.mod">(1) modelle</a>, <a href="curvefit.dat">adatok</a>, 
+ <a href="curvefit1.run">run file</a>
+Görbeillesztési feladatra <a href="curvefit.mod">modellek egyben</a>, <a href="curvefit.dat">adatok</a>, 
+ <a href="curvefit.run">run file</a>.
+
+
+<br>13. óra: <a href="location.html">Vállalatelhelyezés</a>. <a href="vallalatelhelyezes.mod">diszkrét modell</a>, <a
+href="vallalatelhelyezes.dat">adatok</a>, <a href="vallalatelhelyezes.run">run file</a>
+
+<br>14. óra: <a href="location.html">Vállalatelhelyezés</a> folytonos modellek
+<!--a href="Airplane.html">Repteres nemlineáris feladat</a>
+
+<!--a href="5.3.pdf">Munkabeosztás</a>, <a href="munkabeosztas.mod">modell</a>, 
+<a  href="munkabeosztas.dat">adatok</a>, <a href="munkabeosztas.run">run file</a>. 
+
+
+
+majd <a href="szorg3.html">ezt</a>. 1. feladat megoldása :<a href="sz1.mod">mod</a>, 
+<a href="sz1.dat">dat</a>, <a href="sz1.run">run</a>. 2. feladat megoldása,
+egyszeru" verzió: <a href="6.mod">mod</a>, <a href="5.dat">dat</a>, <a
+href="6.run">run</a>, nehezebb verzió: <a href="5.mod">mod</a>, <a href="5.dat">dat</a>, <a
+href="5.run">run</a>.
+
+
+<br>12. óra: 2.ZH
+
+<br>13. óra: Beadandók bemutatása.
+
+<br>14. óra: Beadandók bemutatása.
+
+
+<!--
+II. Zárhelyi dolgozat, feladatok: <a href="A.pdf">A csoport</a>, 
+<a href="B.pdf">B csoport</a>.
+-->
+
+<!--
+</p><h4>Gyakorló feladatok az első Zh-ra: </h4> 
+<a href="ruhagyar.html">ruhagyar</a>,  <a href="ruhagyar.xlsx">megoldás</a>. 
+<br><a href="fel1.html">autogyar</a>,  <a href="autogyar.xlsx">megoldás</a>. 
+<!--br><a href="munka.html">munkák</a>,  <a href="munkak.xlsx">megoldás</a-->
+<!--br><a href="szall.html">szállítás</a>,  <a href="szall.xlsx">megoldás</a--> 
+<!--br><a href="Profitmax.html">profitmax</a>,  <a href="Profitmax.xlsx">megoldás</a>. 
+-->
+
+ <!--br><a href="kerdesek.html">2 soros elméleti kérdések</a-->
+
+
+<!--
+<h4>Gyakorló feladatok a II. Zh-ra: </h4>
+<ul>
+<li><a href="fel1.html">autógyár</a>, <a
+href="autogyar.mod">modell</a>, <a href="autogyar.dat">adatok</a>, <a
+href="autogyar.run">run file</a>
+
+
+<li><a href="2B.html">gépes feladat</a>, <a href="gep-munka.mod">modell</a>,
+<a href="gep-munka.dat">adatok</a>, <a href="gep-munka.run">run file</a>. 
+
+<li><a href="B.html">túlórás</a> <a href="B.mod">B.mod</a>, <a href="B.dat">B.dat</a>, <a
+href="B.run">B.run</a>. Másfajta megoldás: <a href="B2.mod">B2.mod</a>, <a href="B2.dat">B2.dat</a>, <a
+href="B2.run">B2.run</a>
+-->
+<!--li><a href="orokles.html">Öröklés</a>, <a href="orokles.mod">mod</a>, 
+<a href="orokles.dat">dat</a>, <a href="orokles.run">run</a-->
+
+<!--li><a href="zala.html">Utazási hozzájárulás</a>, <a href="zala.mod">mod</a>, 
+<a href="zala.dat">dat</a>, <a href="zala.run">run</a>
+
+</ul>
+
+<br>További feladatok a  <a href="http://www.inf.u-szeged.hu/~boglarka/OptProgRszV4b.pdf">jegyzet</a> végén találhatóak. Ezekhez nincs megoldás, de ha elküldöd megnézem, és ha jó, fel is teszem.
+
+
+<h4>Érzékenységvizsgálat AMPL-ben kidolgozott példával:</h4>
+<a href="http://www.cs.elte.hu/~csisza/files/alkmat/cplex/feladat3.htm">feladat</a>, <a href="2.mod">mod</a>, 
+<a href="2.dat">dat</a>, <a href="2S.run">run</a>, <a href="2.out">érzékenységvizsgálat eredménye</a>
+
+
+<h4>Szorgalmi feladatok</h4>
+<a href="muzeum.png">Múzeum</a> 
+<br><a href="szorg3.html">Konténer</a> 
+<li><a href="orokles.html">Öröklés</a> 3 gyerek esetén!
+<!--br><a href="location.html">Vállalatelhelyezés>
+<br><a href="szorg.html">Bitsorozatok helytakarékos tárolása</a> Plusz segítség, hogy egy
+halmaz hatványhalmaza megadható AMPL-ben <a href="powerset.mod">így</a>. Aztán hogy ez mire jó azt nektek kell kitalálni...
+<br> <a href="Airplane.html">Repteres nemlineáris feladat</a>
+
+
+<h4>Beadandó feladat:</h4>
+
+<p>Mindenki jelentkeznie kell egy feladatra, ahol megadja, hogy angol
+vagy magyar, könnyű, közepes, vagy nehéz feladatot kér.
+A közepes magyar feladatra max 33 pontot lehet kapni, a könnyített feladat ebből -5 pont, a nehéz
+feladat +5 vagy akár több pontot is érhet, ha sikerül megoldani. 
+<strong>Arról amit be kell küldeni <a href="Beadando.html">itt</a>
+írok bővebben.</strong> Érzékenységvizsgálathoz használható futtatófájl, benne
+magyarázattal: <a href="SensAnal.run">SensAnal.run</a>. <strong>Határidő: 13. óra</strong>
+
+<h4>
+<a href="../AMPL/">AMPL letöltése</a></h4> 
+
+-->
+
+
